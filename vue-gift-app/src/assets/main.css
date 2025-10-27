@@ -1,0 +1,194 @@
+@import "./base.css";
+@import "tailwindcss";
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+  transition: 0.4s;
+}
+
+a:hover {
+  background-color: white;
+}
+
+.gift-container {
+  @apply container mx-auto px-2 py-8;
+}
+
+.gift-header {
+  @apply text-2xl font-semibold mt-12 mb-4 text-pink-500 text-left;
+}
+
+.gift-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-center;
+}
+
+.gift-image {
+  @apply h-full w-full object-cover;
+}
+
+.gift-content {
+  @apply p-6;
+}
+
+.gift-category {
+  @apply uppercase tracking-wide text-sm font-medium text-pink-500;
+}
+
+.gift-title {
+  @apply mt-1 block text-lg font-medium text-[#666666] hover:underline;
+}
+
+.gift-description {
+  @apply mt-2 text-sm text-slate-500;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.nav-inner {
+  @apply flex justify-between items-center h-16;
+}
+
+.nav-logo {
+  @apply flex-shrink-0;
+}
+
+.nav-logo-link {
+  @apply text-[#666666] text-2xl font-bold rounded-lg p-2 hover:text-pink-500 transition duration-150;
+}
+
+.nav-links {
+  @apply hidden sm:ml-6 sm:flex sm:space-x-12;
+}
+
+.nav-link {
+  @apply text-[#666666] px-6 py-2 rounded-md text-sm font-medium transition duration-150;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #666666;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link-active {
+  @apply text-[#666666] px-6 py-2 rounded-md text-sm font-medium font-semibold;
+}
+
+.nav-mobile-toggle {
+  @apply sm:hidden flex items-center;
+}
+
+.nav-toggle-btn {
+  @apply inline-flex items-center justify-center p-2 rounded-md text-[#666666] hover:text-pink-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#666666] focus:ring-white transition duration-150;
+}
+
+.nav-icon {
+  @apply block h-6 w-6;
+}
+
+.nav-mobile-menu {
+  @apply sm:hidden px-2 pt-2 pb-3 space-y-1 bg-gray-50 dark:bg-gray-900/90 flex flex-col;
+}
+
+.nav-mobile-link {
+  @apply block px-3 py-2 rounded-md text-base font-medium text-[#666666] transition duration-150;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-mobile-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background-color: #666666;
+  transition: width 0.3s ease;
+}
+
+.nav-mobile-link:hover::after {
+  width: 100%;
+}
+
+.nav-mobile-link-active {
+  @apply block px-3 py-2 rounded-md text-base font-medium text-[#666666];
+  border-bottom: 2px solid #666666;
+}
+.space-content {
+  @apply ml-3 mb-4 mt-7;
+}
+.spacing-content {
+  @apply ml-8;
+}
+.margin-top {
+  @apply mt-[100px];
+}
+.bottom-space {
+  @apply mb-2 mt-2;
+}
+.moveleft-content {
+  @apply ml-4;
+}
+.general-space {
+  @apply mb-8;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    @apply flex place-items-center;
+  }
+
+  .gift-header {
+    @apply mb-6;
+  }
+
+  #app {
+    @apply px-8;
+  }
+}

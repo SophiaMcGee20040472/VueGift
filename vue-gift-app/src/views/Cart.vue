@@ -2,7 +2,7 @@
   <section
     class="margin-top gift-container max-w-3xl mx-auto bg-white rounded-2xl border border-white"
   >
-    <div class="spacing-content mt-12 px-6 py-8 max-w-6xl mx-auto">
+    <div class=" mt-12 px-6 py-8 max-w-6xl mx-auto">
       <h2
         class="text-3xl font-bold mb-8 text-pink-700 flex items-center justify-center"
       >

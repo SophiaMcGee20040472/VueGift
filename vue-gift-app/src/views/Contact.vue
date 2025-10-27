@@ -1,6 +1,8 @@
 <template>
   <div class="margin-top mt-12 px-6 py-8 max-w-6xl mx-auto">
-    <h1 class="spacing-content text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+    <h1
+      class="spacing-content text-3xl md:text-4xl font-bold text-gray-400 mb-10"
+    >
       Get in <span class="text-pink-500">Touch!</span>
     </h1>
 
@@ -13,7 +15,9 @@
         <form @submit.prevent="handleSubmit" class="bottom-space space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="bottom-space block text-sm font-medium text-gray-700 mb-1">
+              <label
+                class="bottom-space block text-sm font-medium text-gray-700 mb-1"
+              >
                 First Name
               </label>
               <input
@@ -30,7 +34,9 @@
             </div>
 
             <div>
-              <label class="bottom-space block text-sm font-medium text-gray-700 mb-1">
+              <label
+                class="bottom-space block text-sm font-medium text-gray-700 mb-1"
+              >
                 Last Name
               </label>
               <input
@@ -48,7 +54,9 @@
           </div>
 
           <div>
-            <label class="bottom-space block text-sm font-medium text-gray-700 mb-1">
+            <label
+              class="bottom-space block text-sm font-medium text-gray-700 mb-1"
+            >
               Email
             </label>
             <input
@@ -65,7 +73,9 @@
           </div>
 
           <div>
-            <label class="block bottom-space text-sm font-medium text-gray-700 mb-1">
+            <label
+              class="block bottom-space text-sm font-medium text-gray-700 mb-1"
+            >
               Message
             </label>
             <textarea
@@ -98,19 +108,19 @@
         <h2 class="text-2xl font-semibold text-pink-500 mt-6">
           We’d love to hear from you!
         </h2>
-        <p class="text-gray-600 leading-relaxed">
+        <p class="text-gray-500 leading-relaxed">
           Here’s where you can find us:
         </p>
-        <ul class="space-y-4 text-gray-700">
+        <ul class="space-y-4 text-gray-500">
           <li class="flex items-center gap-3">
             <span class="text-pink-500 text-lg">📍</span>
             <span>123 Gift Lane, Dublin City, Ireland</span>
           </li>
-          <li class="flex items-center gap-3">
+          <li class="flex items-center gap-3 text-gray-500">
             <span class="text-pink-500 text-lg">📞</span>
             <span>(123) 456-7890</span>
           </li>
-          <li class="flex items-center gap-3">
+          <li class="flex items-center gap-3 text-gray-500">
             <span class="text-pink-500 text-lg">✉️</span>
             <span>giftygifts@vuegifts.com</span>
           </li>

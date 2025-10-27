@@ -13,7 +13,7 @@
         />
       </div>
       <div class="flex-1 text-center lg:text-left">
-        <h1 class="general-space space-content text-5xl font-extrabold mb-12">
+        <h1 class="general-space space-content text-5xl text-gray-700 font-extrabold mb-12">
           About <span class="text-pink-500">VueGift</span>
         </h1>
         <p class="text-lg text-gray-600 mb-4 leading-relaxed">

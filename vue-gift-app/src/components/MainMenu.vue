@@ -2,10 +2,15 @@
   <nav class="nav">
     <div class="nav-container">
       <div class="nav-inner">
+        <!-- Logo -->
         <div class="nav-logo">
           <a href="/" class="nav-logo-link">
+            <img
+              src="@/assets/logo1.jpg"
+              alt="VueGift Logo"
+              class="nav-logo-img"
+            />
             <span class="nav-logo-text">VueGift</span>
-             <img src="@/assets/logo1.jpg" alt="VueGift Logo" class="nav-logo-img" />
           </a>
         </div>
 
@@ -86,27 +91,29 @@
 
     <!-- Breadcrumbs -->
     <div v-if="breadcrumbs.length > 1" class="breadcrumb-container">
-      <nav class="breadcrumb">
-        <ol class="breadcrumb-list">
-          <li
-            v-for="(crumb, index) in breadcrumbs"
-            :key="index"
-            class="breadcrumb-item"
-          >
-            <a
-              v-if="index !== breadcrumbs.length - 1"
-              :href="crumb.href"
-              class="breadcrumb-link"
+      <div class="breadcrumb-inner">
+        <nav class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li
+              v-for="(crumb, index) in breadcrumbs"
+              :key="index"
+              class="breadcrumb-item"
             >
-              {{ crumb.name }}
-            </a>
-            <span v-else class="breadcrumb-current">{{ crumb.name }}</span>
-          </li>
-        </ol>
-        <a href="#" class="breadcrumb-back" @click.prevent="goBack">
-          ← Back
-        </a>
-      </nav>
+              <a
+                v-if="index !== breadcrumbs.length - 1"
+                :href="crumb.href"
+                class="breadcrumb-link"
+              >
+                {{ crumb.name }}
+              </a>
+              <span v-else class="breadcrumb-current">{{ crumb.name }}</span>
+            </li>
+          </ol>
+          <a href="#" class="breadcrumb-back" @click.prevent="goBack">
+            ← Back
+          </a>
+        </nav>
+      </div>
     </div>
   </nav>
 </template>
@@ -197,6 +204,7 @@ const goBack = () => {
   font-size: 1.5rem;
 }
 
+/* Nav Links */
 .nav-links {
   display: none;
 }
@@ -217,6 +225,7 @@ const goBack = () => {
   font-weight: 600;
 }
 
+/* Mobile Toggle */
 .nav-mobile-toggle {
   display: block;
 }
@@ -233,6 +242,7 @@ const goBack = () => {
   color: #111827;
 }
 
+/* Mobile Menu */
 .nav-mobile-menu {
   display: flex;
   flex-direction: column;
@@ -252,10 +262,29 @@ const goBack = () => {
   color: #fe019a;
 }
 
+/* Breadcrumbs */
 .breadcrumb-container {
   background-color: seashell;
-  padding: 0.75rem 1rem;
   border-top: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.breadcrumb-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* more space left/right */
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-inner {
+    padding: 0 1rem; /* reduce margin on small screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .breadcrumb-inner {
+    padding:0 2.5rem; /* more breathing space on large screens */
+  }
 }
 
 .breadcrumb {
@@ -308,7 +337,7 @@ const goBack = () => {
   text-decoration: underline;
 }
 
-/* Transitions */
+/* Transition */
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all 0.3s ease-out;
@@ -319,7 +348,7 @@ const goBack = () => {
   opacity: 0;
 }
 
-
+/* Responsive Adjustments */
 @media (min-width: 768px) {
   .nav-links {
     display: flex;

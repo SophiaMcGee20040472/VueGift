@@ -1,6 +1,6 @@
 <template>
   <div class="mt-12 px-6 py-8 max-w-6xl mx-auto">
-    <h1 class="spacing-content text-3xl md:text-4xl font-bold text-gray-400 mb-10">
+    <h1 class="spacing-content bottom-space text-3xl md:text-4xl font-bold text-gray-400 mb-10">
       Get in <span class="text-pink-500">Touch!</span>
     </h1>
 
@@ -13,7 +13,7 @@
         <form @submit.prevent="handleSubmit" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">
+              <label class="bottom-space block text-sm font-medium text-gray-00 mb-1">
                 First Name
               </label>
               <input
@@ -22,7 +22,7 @@
                 type="text"
                 required
                 placeholder="Enter your first name"
-                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none text-pink-500 placeholder-gray-700"
+                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none text-pink-500 placeholder-gray-400"
               />
               <p v-if="errors.firstName" class="text-red-500 text-sm mt-1">
                 {{ errors.firstName }}
@@ -30,7 +30,7 @@
             </div>
 
             <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">
+              <label class="bottom-space block text-sm font-medium text-gray-700 mb-1">
                 Last Name
               </label>
               <input
@@ -48,7 +48,7 @@
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">
+            <label class="bottom-space block text-sm font-medium text-gray-700 mb-1">
               Email
             </label>
             <input
@@ -57,7 +57,7 @@
               type="email"
               required
               placeholder="Enter your email"
-              class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none text-pink-500 placeholder-gray-700"
+              class=" w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none text-pink-500 placeholder-gray-500"
             />
             <p v-if="errors.email" class="text-red-500 text-sm mt-1">
               {{ errors.email }}
@@ -65,7 +65,7 @@
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">
+            <label class="bottom-space block text-sm font-medium text-gray-700 mb-1">
               Message
             </label>
             <textarea
@@ -80,7 +80,7 @@
 
           <button
             type="submit"
-            class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-lg transition"
+            class="bottom-space w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-lg transition"
           >
             Send Message
           </button>

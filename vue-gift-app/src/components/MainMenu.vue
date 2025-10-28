@@ -120,7 +120,7 @@ const activeLink = ref("Home");
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Categories", href: "/categories" },
-  { name: "Trending", href: "/trending" },
+  { name: "Shopping", href: "/trending" },
   { name: "Gifts", href: "/gift-ideas" },
   { name: "Contact", href: "/contact-us" },
   { name: "🛒Cart", href: "/cart" },

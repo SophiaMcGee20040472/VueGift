@@ -48,7 +48,7 @@ a:hover {
 }
 
 .gift-description {
-  @apply mt-2 text-sm text-slate-500;
+  @apply mt-2 text-sm text-gray-700;
 }
 
 .nav {

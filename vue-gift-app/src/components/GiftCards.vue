@@ -1,7 +1,7 @@
 <template>
   <div class="gift-container ">
     <h2 class="general-space margin-top text-2xl items-center text-pink-500 ">Gift Ideas</h2>
-    <div class="gift-grid">
+    <div class="gift-grid bg-white">
       <div v-for="card in cards" :key="card.title" class="gift-card">
         <div class="gift-image-wrapper">
           <img :src="card.image" :alt="card.alt" class="gift-image" />

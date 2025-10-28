@@ -183,7 +183,6 @@ const goBack = () => {
   justify-content: space-between;
 }
 
-/* Logo */
 .nav-logo-link {
   display: flex;
   align-items: center;
@@ -204,7 +203,6 @@ const goBack = () => {
   font-size: 1.5rem;
 }
 
-/* Nav Links */
 .nav-links {
   display: none;
 }
@@ -225,7 +223,6 @@ const goBack = () => {
   font-weight: 600;
 }
 
-/* Mobile Toggle */
 .nav-mobile-toggle {
   display: block;
 }
@@ -242,7 +239,6 @@ const goBack = () => {
   color: #111827;
 }
 
-/* Mobile Menu */
 .nav-mobile-menu {
   display: flex;
   flex-direction: column;
@@ -262,7 +258,6 @@ const goBack = () => {
   color: #fe019a;
 }
 
-/* Breadcrumbs */
 .breadcrumb-container {
   background-color: seashell;
   border-top: 1px solid #eee;
@@ -272,18 +267,18 @@ const goBack = () => {
 .breadcrumb-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem; /* more space left/right */
+  padding: 0 1rem; 
 }
 
 @media (max-width: 768px) {
   .breadcrumb-inner {
-    padding: 0 1rem; /* reduce margin on small screens */
+    padding: 0 1rem;
   }
 }
 
 @media (min-width: 1200px) {
   .breadcrumb-inner {
-    padding:0 2.5rem; /* more breathing space on large screens */
+    padding:0 2.5rem; 
   }
 }
 
@@ -337,7 +332,6 @@ const goBack = () => {
   text-decoration: underline;
 }
 
-/* Transition */
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all 0.3s ease-out;
@@ -348,7 +342,6 @@ const goBack = () => {
   opacity: 0;
 }
 
-/* Responsive Adjustments */
 @media (min-width: 768px) {
   .nav-links {
     display: flex;

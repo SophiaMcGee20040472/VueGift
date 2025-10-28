@@ -1,15 +1,13 @@
 <template>
   <div class="mt-12 px-6 py-8 max-w-6xl mx-auto">
-    <h1 class="spacing-content bottom-space text-3xl md:text-4xl font-bold text-gray-400 mb-10">
+    <h1 class="margin-top1 spacing-content bottom-space text-3xl md:text-4xl font-bold text-gray-400 mb-10">
       Get in <span class="text-pink-500">Touch!</span>
     </h1>
-
     <div class="grid md:grid-cols-2 gap-12 items-start">
       <div class="bg-white p-8">
         <h3 class="text-2xl font-semibold mb-6 text-pink-500">
           Send us a message
         </h3>
-
         <form @submit.prevent="handleSubmit" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -97,7 +95,7 @@
       </div>
 
       <div class="space-y-6">
-        <h2 class="text-2xl font-semibold text-pink-500 mt-6">
+        <h2 class="margin-top2 text-2xl font-semibold text-pink-500 mt-6">
           We’d love to hear from you!
         </h2>
         <p class="text-gray-500 leading-relaxed">
@@ -202,6 +200,14 @@ div {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
+}
+.margin-top1 {
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+.margin-top2 {
+  margin-top: 32px;
+  margin-bottom: 5px;
 }
 .fade-enter-from,
 .fade-leave-to {
